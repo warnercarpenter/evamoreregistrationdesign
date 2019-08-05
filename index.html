@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>EVAmore Artist Registration</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./form.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="backgroundContainer">
+    <div id="starsContainer" class="lowerOpacity">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
+  </div>
+
+  <div id="navBar" class="fadeIn">
+    <div id="logoAndNav">
+      <div id="logoContainer"></div>
+      <div id="navLinkContainer">
+        <a>Artists</a>
+        <a>About</a>
+        <a>Support</a>
+      </div>
+    </div>
+    <div id="loginRegisterContainer">
+      <a>Log In</a>
+      <a class="getStartedButton">Register</a>
+    </div>
+    <div class="container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </div>
+
+  <div class="enterLeft" id="artistRegistrationContainer">
+    <form id="regForm" action="">
+
+      <h3 id="formH3">We'll start with the easy stuff</h3>
+      <hr />
+
+      <div class="tab">
+        What is your artist name?
+        <p><input placeholder="Artist name" oninput="this.className = ''"></p>
+        Choose a username
+        <p><input placeholder="Username" oninput="this.className = ''"></p>
+        Choose a password
+        <p><input type="password" placeholder="Password" oninput="this.className = ''"></p>
+      </div>
+
+      <div class="tab">
+        Your email address
+        <p><input placeholder="Email address" oninput="this.className = ''"></p>
+        Your phone number
+        <p><input placeholder="Phone number" oninput="this.className = ''"></p>
+        Your timezone
+        <p><select oninput="this.className = ''">
+            <option value="Eastern">Eastern Time</option>
+            <option selected="selected" value="Central">Central Time</option>
+            <option value="Mountain">Mountain Time</option>
+            <option value="MountainNoDST">Mountain Time (no DST)</option>
+            <option value="Pacific">Pacific Time</option>
+            <option value="Alaska">Alaska Time</option>
+            <option value="Hawaii">Hawaii Time</option>
+            <option value="HawaiiNoDST">Hawaii Time (no DST)</option>
+          </select></p>
+      </div>
+
+      <div class="tab">
+        What city, state are you currently based in?
+        <p><input placeholder="City, State" oninput="this.className = ''"></p>
+        Minimum set length
+        <p><input placeholder="Minimum set length" oninput="this.className = ''"></p>
+        Maximum set length
+        <p><input placeholder="Maximum set length" oninput="this.className = ''"></p>
+      </div>
+
+      <div class="tab">
+        How far are you willing to travel?
+        <p><select class="minimal" oninput="this.className = ''">
+            <option value="25">25 miles</option>
+            <option selected="selected" value="50">50 miles</option>
+            <option value="150">150 miles</option>
+            <option value="250">250 miles</option>
+            <option value="500">500 miles</option>
+          </select></p>
+        Do you have you own sound equipment?
+        <p><select class="minimal" oninput="this.className = ''">
+            <option selected="selected" value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select></p>
+        How did you hear about us?
+        <p><input placeholder="How did you hear about us?" oninput="this.className = ''"></p>
+      </div>
+
+      <div class="tab">Provide a short bio about you or your band
+        <p><textarea rows="4" placeholder="What would interest an event planner about you?"
+            oninput="this.className = ''"></textarea></p>
+      </div>
+
+      <div class="tab">Select all genres that apply to your music<br />
+        <div class="buttonGrid">
+          <input type="checkbox" id="check_1" name="check_1" value="check_1">
+          <label for="check_1">Acoustic</label>
+          <input type="checkbox" id="check_2" name="check_2" value="check_2">
+          <label for="check_2">Bluegrass</label>
+          <input type="checkbox" id="check_3" name="check_3" value="check_3">
+          <label for="check_3">Country</label>
+          <input type="checkbox" id="check_4" name="check_4" value="check_4">
+          <label for="check_4">DJ</label>
+          <input type="checkbox" id="check_5" name="check_5" value="check_5">
+          <label for="check_5">Dance</label>
+          <input type="checkbox" id="check_6" name="check_6" value="check_6">
+          <label for="check_6">Electronic</label>
+          <input type="checkbox" id="check_7" name="check_7" value="check_7">
+          <label for="check_7">Folk</label>
+          <input type="checkbox" id="check_8" name="check_8" value="check_8">
+          <label for="check_8">Funk</label>
+          <input type="checkbox" id="check_9" name="check_9" value="check_9">
+          <label for="check_9">Hip-Hop</label>
+          <input type="checkbox" id="check_10" name="check_10" value="check_10">
+          <label for="check_10">Jazz</label>
+          <input type="checkbox" id="check_11" name="check_11" value="check_11">
+          <label for="check_11">Latin</label>
+          <input type="checkbox" id="check_12" name="check_12" value="check_12">
+          <label for="check_12">Pop</label>
+          <input type="checkbox" id="check_13" name="check_13" value="check_13">
+          <label for="check_13">R&B</label>
+          <input type="checkbox" id="check_14" name="check_14" value="check_14">
+          <label for="check_14">Reggae</label>
+          <input type="checkbox" id="check_15" name="check_15" value="check_15">
+          <label for="check_15">Rock</label>
+          <input type="checkbox" id="check_16" name="check_16" value="check_16">
+          <label for="check_16">Singer-Songwriter</label>
+          <input type="checkbox" id="check_17" name="check_17" value="check_17">
+          <label for="check_17">Specialty Acts</label>
+        </div>
+      </div>
+
+      <div class="tab">
+        Who do you sound like?
+        <p><input placeholder="Name three artists your sound could be compared to" oninput="this.className = ''"></p>
+
+        Select the types of events you'd like to play<br />
+        <div class="buttonGrid">
+          <input type="checkbox" id="check_18" name="check_18" value="check_18">
+          <label for="check_18">College Event</label>
+          <input type="checkbox" id="check_19" name="check_19" value="check_19">
+          <label for="check_19">Corporate Event</label>
+          <input type="checkbox" id="check_20" name="check_20" value="check_20">
+          <label for="check_20">Private Party</label>
+          <input type="checkbox" id="check_21" name="check_21" value="check_21">
+          <label for="check_21">Wedding</label>
+        </div>
+
+        What band variations can you do?<br />
+        <div class="buttonGrid">
+          <input type="checkbox" id="check_22" name="check_22" value="check_22">
+          <label for="check_22">All cover set</label>
+          <input type="checkbox" id="check_23" name="check_23" value="check_23">
+          <label for="check_23">Some covers</label>
+          <input type="checkbox" id="check_24" name="check_24" value="check_24">
+          <label for="check_24">No covers</label>
+        </div>
+      </div>
+
+      <div class="tab">
+        Spotify URI link
+        <p><input placeholder="On your profile, click 'share' and 'Copy Spotify URI'" oninput="this.className = ''"></p>
+
+        Facebook handle
+        <p><input placeholder="Insert your Facebook artist profile handle" oninput="this.className = ''"></p>
+
+        Youtube video link
+        <p><input placeholder="Youtube video link" oninput="this.className = ''"></p>
+      </div>
+
+      <div class="tab">
+        What band variations can you do?<br />
+        <div class="buttonGrid">
+          <input type="checkbox" id="check_25" name="check_25" value="check_25">
+          <label for="check_25">Full Band</label>
+          <input type="checkbox" id="check_26" name="check_26" value="check_26">
+          <label for="check_26">Duo/Trio</label>
+          <input type="checkbox" id="check_27" name="check_27" value="check_27">
+          <label for="check_27">Solo</label>
+        </div>
+
+        Are you a specialty act?<br />
+        <div class="buttonGrid">
+          <input type="checkbox" id="check_28" name="check_28" value="check_28">
+          <label for="check_28">Circus Acts</label>
+          <input type="checkbox" id="check_29" name="check_29" value="check_29">
+          <label for="check_29">Linedancers</label>
+          <input type="checkbox" id="check_30" name="check_30" value="check_30">
+          <label for="check_30">MC's</label>
+          <input type="checkbox" id="check_31" name="check_31" value="check_31">
+          <label for="check_31">Environment Enhancers</label>
+          <input type="checkbox" id="check_32" name="check_32" value="check_32">
+          <label for="check_32">National Anthem Singer</label>
+          <input type="checkbox" id="check_33" name="check_33" value="check_33">
+          <label for="check_33">Magician</label>
+        </div>
+      </div>
+
+      <div class="tab">
+        Image should be a perfect square<br />Recommended size: 600x600px minimum
+        <div id="imageUploadContainer">
+          <input id="imageUpload" type='file' style="background-image: url('./images/draganddrop.png')" />
+        </div>
+        <button type="button" id="removeImage" class="hidden">Remove Image</button>
+      </div>
+
+      <div style="overflow:auto;">
+        <div style="float:right;">
+          <button type="button" id="prevBtn" class="nextPrevButton" onclick="nextPrev(-1)">Previous</button>
+          <button type="button" id="nextBtn" class="nextPrevButton" onclick="nextPrev(1)">Next</button>
+        </div>
+      </div>
+
+      <!-- Circles which indicates the steps of the form: -->
+      <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </div>
+
+    </form>
+  </div>
+
+  <header></header>
+
+
+  <footer></footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
